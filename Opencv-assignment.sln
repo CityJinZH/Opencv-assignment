@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week6_040301", "Opencv-assignment\Opencv-assignment.vcxproj", "{D23842AC-73C0-4466-9AD8-CF00B07A5204}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Opencv-assignment", "Opencv-assignment\Opencv-assignment.vcxproj", "{D23842AC-73C0-4466-9AD8-CF00B07A5204}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week6_040302", "Week6_040302\Week6_040302.vcxproj", "{1B81E61E-6810-4073-8C10-56D4258C2C47}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week6_040303", "Week6_040303\Week6_040303.vcxproj", "{E6954752-FAA7-4EC8-B344-94AC0FDB6032}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Week6_040301", "Week6_040301\Week6_040301.vcxproj", "{C43431A8-1F01-4105-A340-044A233A7146}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{E6954752-FAA7-4EC8-B344-94AC0FDB6032}.Release|x64.Build.0 = Release|x64
 		{E6954752-FAA7-4EC8-B344-94AC0FDB6032}.Release|x86.ActiveCfg = Release|Win32
 		{E6954752-FAA7-4EC8-B344-94AC0FDB6032}.Release|x86.Build.0 = Release|Win32
+		{C43431A8-1F01-4105-A340-044A233A7146}.Debug|x64.ActiveCfg = Debug|x64
+		{C43431A8-1F01-4105-A340-044A233A7146}.Debug|x64.Build.0 = Debug|x64
+		{C43431A8-1F01-4105-A340-044A233A7146}.Debug|x86.ActiveCfg = Debug|Win32
+		{C43431A8-1F01-4105-A340-044A233A7146}.Debug|x86.Build.0 = Debug|Win32
+		{C43431A8-1F01-4105-A340-044A233A7146}.Release|x64.ActiveCfg = Release|x64
+		{C43431A8-1F01-4105-A340-044A233A7146}.Release|x64.Build.0 = Release|x64
+		{C43431A8-1F01-4105-A340-044A233A7146}.Release|x86.ActiveCfg = Release|Win32
+		{C43431A8-1F01-4105-A340-044A233A7146}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

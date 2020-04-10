@@ -11,7 +11,7 @@ int main()
 	int width = srcMat.cols;
 	int height = srcMat.rows;
 	//define angle\scale\center to get Affine  matrix
-	float angle = -10.0, scale = 1;
+	float angle = 30, scale = 1;
 	Point2f center(srcMat.cols*0.5, srcMat.rows*0.5);
 	//ªÒµ√±‰ªªæÿ’Û
 	Mat affine_matrix = getRotationMatrix2D(center, angle, scale);

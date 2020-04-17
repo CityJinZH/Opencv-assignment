@@ -6,14 +6,15 @@ using namespace std;
 
 int main()
 {
-	Mat srcMat = imread("D:\\install\\data\\die_on_chip.png", 0), dspMat = imread("D:\\install\\data\\die_on_chip.png");
+	Mat srcMat = imread("D:\\install\\data\\die_on_chip.png", 0);
+	Mat dspMat = imread("D:\\install\\data\\die_on_chip.png");
 	Mat binaryMat;
-	if (!srcMat.data) { cout << "Open failed, please check your Picture's address" << endl; return -1; }
 
-	//Binarization and  Connected Component -getting
+
+	//二值化
 	threshold(srcMat, binaryMat, 150, 255, THRESH_OTSU);
 
-	Mat element = getStructuringElement(MORPH_RECT, Size(7, 7));
+	Mat element = getStructuringElement(MORPH_RECT, Size(8, 9));
 	morphologyEx(binaryMat, binaryMat, MORPH_OPEN, element);
 
 	vector<vector<Point>> contours;
@@ -27,7 +28,7 @@ int main()
 		RotatedRect rect = minAreaRect(contours[i]);
 		Point2f P[4];
 		rect.points(P);
-		// rate of rect 
+		// 矩形参数设置
 		float Y = sqrt((P[0].y - P[1].y) * (P[0].y - P[1].y) + (P[0].x - P[1].x) * (P[0].x - P[1].x));
 		float X = sqrt((P[1].y - P[2].y) * (P[1].y - P[2].y) + (P[1].x - P[2].x) * (P[1].x - P[2].x));
 		rate[i] = X / Y;
@@ -40,6 +41,7 @@ int main()
 			}
 		}
 	}
+
 	imshow("srcMat", srcMat);
 	imshow("dspMat", dspMat);
 	imshow("binaryMat", binaryMat);

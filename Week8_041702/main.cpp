@@ -33,7 +33,7 @@ int main()
 		float X = sqrt((P[1].y - P[2].y) * (P[1].y - P[2].y) + (P[1].x - P[2].x) * (P[1].x - P[2].x));
 		rate[i] = X / Y;
 		cout << "num=" << i << "rate of rect =" << rate[i] << endl;
-		if ((rate[i] >= 0.95) and (rate[i] <= 1.1))
+		if ((rate[i] >= 0.8) and (rate[i] <= 1.0))
 		{
 			for (int j = 0; j <= 3; j++)
 			{

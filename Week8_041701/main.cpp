@@ -35,7 +35,7 @@ int main()
 		rate[i] = X / Y;
 
 
-		if ((rate[i] >= 0.95) and (rate[i] <= 1.1))
+		if ((rate[i] >= 0.90) and (rate[i] <= 1.1))
 		{
 			for (int j = 0; j <= 3; j++)
 			{

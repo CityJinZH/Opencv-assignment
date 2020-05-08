@@ -3,8 +3,6 @@
 using namespace cv;
 using namespace std;
 
-
-
 float O_Distance(float * a, float* b, int n);
 void HOG_ext(Mat & src, int blockSize, int nX, int nY, float * hist);
 
@@ -48,7 +46,6 @@ int main() {
 
 }
 
-
 //HOG特征提取/
 void HOG_ext(Mat & src, int blockSize, int nX, int nY, float * hist) {
 	Mat gx, gy;
@@ -71,7 +68,6 @@ void HOG_ext(Mat & src, int blockSize, int nX, int nY, float * hist) {
 		}
 	}
 }
-
 
 // 欧几里得距离计算
 float O_Distance(float * a, float * b, int n) {

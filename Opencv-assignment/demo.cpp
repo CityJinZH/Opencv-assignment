@@ -46,7 +46,7 @@ void RGBHIST(Mat a, string b)
 	imshow(b, histImage);
 }
 
-int main()
+int main1()
 {
 	Mat src, dst;
 	src = imread("D:\\Install\\data\\gtest.jpg");

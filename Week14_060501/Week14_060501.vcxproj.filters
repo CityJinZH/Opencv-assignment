@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="kmeans.cpp">
+    <ClCompile Include="Kmeans.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
